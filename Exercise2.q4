@@ -1,0 +1,33 @@
+import numpy as np
+import math
+
+
+
+#define the variables 
+x1 =20    #represent the sements
+x2 =2     #represent the frequency
+x3 =1.6e-19 #represent the q
+x3 =6.9     #represent the mass of carbon
+x4 =0.785   #represent pi per 4
+x5 =200     #the voltage
+x6 = 1/x2      #the  fraction
+
+#place the formula 
+
+firstpart=x1*x3*x5*math.sin(x4)
+secondpart=(2*x3)
+squareRoot= math.sqrt(firstpart/secondpart)
+
+result = x6*squareRoot
+
+np.vectorize(result)
+
+print(result)
+
+
+
+print(result)
+
+
+
+18.79927101120368
